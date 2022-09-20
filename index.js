@@ -1,9 +1,10 @@
-const http = require('http')
+import express from 'express';
+import Routes from './routes/routes.js';
 
-const requestListener = function (req, res) {
-    res.writeHead(200)
-    res.end('<h1>Loud greetings to the world!</h1>')
-}
+const app = express();
 
-const server = http.createServer(requestListener)
-server.listen(8080)
+
+app.listen(8080)
+
+
+app.use('/product', Routes);
