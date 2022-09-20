@@ -1,0 +1,24 @@
+{
+  "name": "node_example",
+  "version": "1.0.0",
+  "description": "Node.js example application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beckojr/node_example.git"
+  },
+  "keywords": [
+    "Heroku",
+    "Node.js",
+    "PaaS"
+  ],
+  "author": "Becko Junior Camara<camara.becko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beckojr/node_example/issues"
+  },
+  "homepage": "https://github.com/beckojr/node_example#readme"
+}
