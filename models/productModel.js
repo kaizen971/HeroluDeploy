@@ -22,10 +22,8 @@ const ProductSchema = new mongoose.Schema({
 ProductSchema.static('searchProduct', searchProduct);
 ProductSchema.static('searchProductID', searchProductID);
 
-
-
 async function searchProduct(regex) {
-        const search = await this.find({nom_francais: regex });
+        const search = await this.find({nom_francais: regex }).select('nom_francais');
         if (!search) throw new Error(`Produit non disponible`);
         return search;
 }

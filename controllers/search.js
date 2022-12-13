@@ -14,7 +14,7 @@ export async function searchProductItem(req,res) {
 
 export async function search(req,res) {
     ProductModel.find((err,docs) => {
-       if(!err) res.send(docs);
-       else console.log("Error to get data : " + err)
-    })
+        if(!err) res.send(docs);
+        else console.log("Error to get data : " + err)
+     }).select('nom_francais');
 }
